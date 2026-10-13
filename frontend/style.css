@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 16px;
+  font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  background: linear-gradient(160deg, #6fb1fc, #4364f7);
+  color: #222;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.search button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #4364f7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #2f4fd8;
+}
+
+.search button:disabled {
+  background: #9aa8e8;
+  cursor: default;
+}
+
+.message {
+  min-height: 1.2em;
+  margin: 14px 0 0;
+  text-align: center;
+  color: #d33;
+}
+
+.message.loading {
+  color: #666;
+}
+
+.result {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.result h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.description {
+  margin: 6px 0 0;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.temperature {
+  margin: 8px 0 16px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.details li {
+  flex: 1;
+  background: #f1f4ff;
+  border-radius: 8px;
+  padding: 10px 4px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.details span {
+  display: block;
+  margin-top: 4px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.updated {
+  margin: 14px 0 0;
+  font-size: 0.8rem;
+  color: #999;
+}
